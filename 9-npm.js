@@ -27,7 +27,6 @@ const items = [1,[2,[3,[4]]]]
 const newItems = _.flattenDeep(items)
 console.log(newItems)
 
-
 //Why package.json is important
 /* package.json store information about dependencies 
 intsall into projects. all the dependancy store into node_modules
@@ -36,3 +35,46 @@ avoiding that we will not push node_module into Git and we will share code with 
 so whenever other developers clone this projects then they just need to run "npm install" which will download
 all required node modules and create node_modules folder.
 */
+
+
+/* dev dependencies 
+
+dependencies which used only for project development and testing but not used into production.
+we will install that dependencies as dev dependencies.
+
+ to install dependencies as a devdependencies :
+  
+   npm i <package name> -D/--save-dev
+
+*/
+
+
+/* 
+ How is script works in package.json 
+
+ script is used to defined User defined command in project to use shorten format of command
+
+ ex: we run file using node <FileName>.js
+
+ if we set command in script :
+    "start" : "node 1-Global.js"
+
+    then we don't need to run node 1-Global.js every time instead of that we can do is npm start.
+
+*/
+
+/*
+ 
+    Unintstall depenencies 
+
+    two approach :
+
+    1) npm uninstall <packagename>
+    2) Manual Approach :
+
+        - Remove package-lock.json 
+        - remove dependencies from package.json
+        - run npm install
+ */
+
+        

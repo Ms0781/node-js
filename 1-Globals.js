@@ -1,7 +1,4 @@
 console.log("Welcome to first node js project.")
-
-
-
 //Global variable 
 
 /*
