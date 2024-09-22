@@ -8,7 +8,7 @@ const http = require('http')
 */
 const server = http.createServer((req,res) => {
     if(req.url === "/"){
-        res.write("Welcome to home page")
+        res.write("JUST CODE IT")
         res.end()
     }
 
