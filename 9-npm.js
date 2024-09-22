@@ -29,3 +29,10 @@ console.log(newItems)
 
 
 //Why package.json is important
+/* package.json store information about dependencies 
+intsall into projects. all the dependancy store into node_modules
+which will take to much space
+avoiding that we will not push node_module into Git and we will share code with other developer
+so whenever other developers clone this projects then they just need to run "npm install" which will download
+all required node modules and create node_modules folder.
+*/
